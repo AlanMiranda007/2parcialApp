@@ -98,3 +98,49 @@ body {
 .tarjeta-cripto__variacion { font-size: 12px; font-weight: 500; }
 .tarjeta-cripto__variacion--sube { color: #2ecc71; }
 .tarjeta-cripto__variacion--baja { color: #ff5a5f; }
+
+
+.barra-busqueda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 52px;
+  padding: 0 8px 0 16px;
+  margin-top: 24px;
+  background: #141414;
+  border: 1px solid #262626;
+  border-radius: var(--radio-grande);
+}
+
+.barra-busqueda:focus-within {
+  border-color: var(--color-primario);
+}
+
+.barra-busqueda__icono { font-size: 16px; }
+
+.barra-busqueda__campo {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+  font-size: 14px;
+}
+
+.barra-busqueda__campo::placeholder { color: #9a9a9a; }
+
+.barra-busqueda__filtro {
+  height: 36px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 10px;
+  background: var(--color-primario);
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.barra-busqueda__filtro:hover { filter: brightness(1.1); }
