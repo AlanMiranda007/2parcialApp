@@ -1,0 +1,66 @@
+:root {
+  --color-bg: #070707;
+  --color-primary: #6552fe;
+  --color-primary-shadow: rgba(101, 82, 254, 0.35);
+  --color-text: #ffffff;
+  --font-family: 'Poppins', sans-serif;
+  --radius-lg: 16px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #000;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+}
+
+/* PLANTILLA */
+.onboarding {
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  background: var(--color-bg);
+  padding: 56px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ORGANISMO */
+.hero { display: flex; flex-direction: column; gap: 24px; }
+.hero__image {
+  width: 100%;
+  max-width: 280px;
+  align-self: flex-end;
+  margin-right: -20px;
+}
+
+/* ÁTOMOS */
+.logo { font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -1px; }
+.logo__x { color: var(--color-primary); }
+
+.title { font-size: 28px; font-weight: 500; line-height: 1.4; }
+.text  { font-size: 14px; font-weight: 400; line-height: 1.5; }
+
+.button {
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: var(--radius-lg);
+  background: var(--color-primary);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 12px 24px var(--color-primary-shadow);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+.button:hover  { filter: brightness(1.1); }
+.button:active { transform: scale(0.98); }
+
+/* MOLÉCULA */
+.hero-text { display: flex; flex-direction: column; gap: 24px; max-width: 260px; }
