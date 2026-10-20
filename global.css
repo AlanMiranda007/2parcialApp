@@ -144,3 +144,45 @@ body {
 }
 
 .barra-busqueda__filtro:hover { filter: brightness(1.1); }
+
+a.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.mercado {
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  background: var(--color-fondo);
+  padding: 40px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mercado__encabezado {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logotipo--chico { font-size: 36px; margin-bottom: 12px; }
+
+.enlace-volver {
+  color: #9a9a9a;
+  font-size: 14px;
+  text-decoration: none;
+}
+.enlace-volver:hover { color: var(--color-texto); }
+
+.mercado .barra-busqueda { margin-top: 0; }
+
+.lista-cripto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.lista-cripto .tarjeta-cripto { margin: 0; }
